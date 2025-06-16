@@ -346,10 +346,6 @@ html, body {
 } 
 
 /* for ios */
-#card_first-page {
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px); /* สำคัญมากสำหรับ iOS */
-}
 
 #card_first-page {
   background: rgba(255, 255, 255, 0.14);
@@ -371,10 +367,5 @@ html, body {
     height: 8em;
   }
 
-  /* ลด animation, shadow ที่กิน CPU */
-  #card_first-page::before {
-    animation: none;
-    box-shadow: none;
-  }
 }
 
