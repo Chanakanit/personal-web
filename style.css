@@ -147,9 +147,8 @@ html, body {
       margin-bottom: 18px;
       font-weight: bold;
       font-size: 18px;
-      color: #d7ffc4;
-      text-shadow: 0 0 5px #3df0f6;
-      /* box-shadow: 0 0 15px #3df0f6; */
+      color: #edffe4;
+      text-shadow: 0 0 2px #000000;
       padding: 2px;
       
     }
@@ -163,13 +162,14 @@ html, body {
       padding: 0;
       margin: 0;
       position: relative;
-      background: conic-gradient(at top right, lightcyan, lightblue);
-      border: 1px solid;       
+      background: #fff;
+      box-shadow: 0 0 4px ;     
       padding:  4px 15px 0px;
       width: 200px;
       border-radius: 10px;
       transition: all .3s ease;
     }
+
 
     .first_page-contact >ul>li:nth-child(4){
       display: none;
@@ -303,7 +303,6 @@ html, body {
     }
     .first_page-contact >ul:hover{
       width: 200px;
-      background: conic-gradient(at top right, lightcyan, lightblue);
     }
     .first_page-contact>ul:hover>li:nth-child(4){
       display: none;
