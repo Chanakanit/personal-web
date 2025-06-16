@@ -344,3 +344,37 @@ html, body {
     height: 14em;
   }
 } 
+
+/* for ios */
+#card_first-page {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* สำคัญมากสำหรับ iOS */
+}
+
+#card_first-page {
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  
+  /* fallback */
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width: 575px) {
+  /* เพิ่มขนาดฟอนต์ให้เหมาะจอเล็ก */
+  #card_first-page h2 {
+    font-size: 18px;
+  }
+
+  #first_page-content > img {
+    width: 8em;
+    height: 8em;
+  }
+
+  /* ลด animation, shadow ที่กิน CPU */
+  #card_first-page::before {
+    animation: none;
+    box-shadow: none;
+  }
+}
+
